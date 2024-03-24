@@ -1,0 +1,11 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+- None of the listed vulnerabilities appear to be directly related to the code deployed for the environment. 
+  These findings point towards security configuration issues within the AWS environment itself.
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+- IAM.6Hardware MFA: Enabling hardware MFA for the root user is strongly recommended.
+- IAM.9MFA: Enable software MFA for the root user as an alternative. 
+- VPC Security Groups (EC2.2): Review and update VPC default security groups to only allow necessary inbound and outbound traffic for your application's functionality.
+- CloudTrail.1: Enable CloudTrail and configure a multi-Region trail that logs read and write management events. This helps track user activity and potential security incidents.
+- EC2.6: Enable VPC flow logging in all VPCs to monitor network traffic. This can provide valuable insights into potential security issues.
+- IAM.11-17: Update your IAM password policy to enforce stricter password requirements. This includes requiring at least one uppercase letter, lowercase letter, symbol, number, a minimum length of 14 characters, and password rotation every 90 days or less.

@@ -1,0 +1,9 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1 
+- Web service instance should be in a private subnet and not in a public subnet. 
+This is because the web service instance is exposed to the internet and can be accessed by anyone. This is a security risk as it can be attacked by hackers.
+
+# Poor practice 2
+- Sensitive data should be encrypted before being uploaded to the S3 bucket. 
+- No VPN or security group is used to restrict access to the S3 bucket (secret_recipe).

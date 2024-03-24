@@ -1,0 +1,28 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+- cfn-lint
+- Checkov
+- AWS Config
+
+### Example vulnerability
+- Ec2 instance with no EBS volume attached
+- Security group with all traffic allowed
+- S3 bucket with public access
+
+##Scan AMI’s or containers for OS vulnerabilities
+- AWS Inspector
+- AWS ECR scanning
+### Example vulnerability
+- Outdated OS
+- ssh port open to the world
+- Unpatched software 
+- Unencrypted data
+##Scan an AWS environment for cloud configuration vulnerabilities
+- AWS Config
+- AWS Trusted Advisor
+- AWS Security Hub
+### Example vulnerability
+- overly permissive security group
+- S3 bucket with public access
+- IAM user with admin access
